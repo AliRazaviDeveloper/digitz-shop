@@ -414,6 +414,24 @@ video {
 .top-2{
   top: 0.5rem;
 }
+.left-0{
+  left: 0px;
+}
+.top-1{
+  top: 0.25rem;
+}
+.top-3{
+  top: 0.75rem;
+}
+.-top-1{
+  top: -0.25rem;
+}
+.-top-2{
+  top: -0.5rem;
+}
+.-top-3{
+  top: -0.75rem;
+}
 .col-span-1{
   grid-column: span 1 / span 1;
 }
@@ -496,6 +514,9 @@ video {
 .h-10{
   height: 2.5rem;
 }
+.h-2{
+  height: 0.5rem;
+}
 .w-7{
   width: 1.75rem;
 }
@@ -519,6 +540,9 @@ video {
 }
 .w-10{
   width: 2.5rem;
+}
+.w-2{
+  width: 0.5rem;
 }
 .max-w-screen-md{
   max-width: 768px;
