@@ -584,6 +584,10 @@ select{
 .sticky{
   position: sticky;
 }
+.inset-x-0{
+  left: 0px;
+  right: 0px;
+}
 .top-0{
   top: 0px;
 }
@@ -614,6 +618,9 @@ select{
 .right-0{
   right: 0px;
 }
+.bottom-9{
+  bottom: 2.25rem;
+}
 .z-10{
   z-index: 10;
 }
@@ -622,12 +629,6 @@ select{
 }
 .col-span-12{
   grid-column: span 12 / span 12;
-}
-.col-span-1{
-  grid-column: span 1 / span 1;
-}
-.col-span-2{
-  grid-column: span 2 / span 2;
 }
 .row-span-2{
   grid-row: span 2 / span 2;
@@ -662,6 +663,21 @@ select{
 }
 .mt-12{
   margin-top: 3rem;
+}
+.mt-8{
+  margin-top: 2rem;
+}
+.mt-2{
+  margin-top: 0.5rem;
+}
+.-ml-3{
+  margin-left: -0.75rem;
+}
+.-ml-2{
+  margin-left: -0.5rem;
+}
+.mt-6{
+  margin-top: 1.5rem;
 }
 .block{
   display: block;
@@ -702,23 +718,11 @@ select{
 .h-16{
   height: 4rem;
 }
-.h-\[500px\]{
-  height: 500px;
-}
-.h-96{
-  height: 24rem;
-}
 .h-64{
   height: 16rem;
 }
-.h-56{
-  height: 14rem;
-}
-.h-60{
-  height: 15rem;
-}
-.h-72{
-  height: 18rem;
+.h-6{
+  height: 1.5rem;
 }
 .w-8{
   width: 2rem;
@@ -740,6 +744,9 @@ select{
 }
 .w-7{
   width: 1.75rem;
+}
+.w-6{
+  width: 1.5rem;
 }
 .max-w-screen-md{
   max-width: 768px;
@@ -769,9 +776,6 @@ select{
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -783,9 +787,6 @@ select{
 }
 .flex-col{
   flex-direction: column;
-}
-.items-end{
-  align-items: flex-end;
 }
 .items-center{
   align-items: center;
@@ -820,23 +821,14 @@ select{
 .gap-5{
   gap: 1.25rem;
 }
-.gap-16{
-  gap: 4rem;
+.\!gap-5{
+  gap: 1.25rem !important;
 }
-.gap-12{
-  gap: 3rem;
-}
-.gap-24{
-  gap: 6rem;
-}
-.\!gap-24{
-  gap: 6rem !important;
+.gap-6{
+  gap: 1.5rem;
 }
 .gap-10{
   gap: 2.5rem;
-}
-.\!gap-5{
-  gap: 1.25rem !important;
 }
 .overflow-hidden{
   overflow: hidden;
@@ -886,6 +878,10 @@ select{
   --tw-border-opacity: 1;
   border-color: rgb(248 250 252 / var(--tw-border-opacity));
 }
+.border-orange-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
+}
 .border-b-slate-100{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(241 245 249 / var(--tw-border-opacity));
@@ -929,6 +925,10 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(244 63 94 / var(--tw-bg-opacity));
 }
+.bg-yellow-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
 .bg-blue-500{
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -936,6 +936,26 @@ select{
 .bg-purple-500{
   --tw-bg-opacity: 1;
   background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+}
+.bg-slate-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+.bg-slate-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+.bg-slate-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+.bg-slate-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+.bg-slate-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 .fill-slate-400{
   fill: #94a3b8;
@@ -980,8 +1000,15 @@ select{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .text-left{
   text-align: left;
+}
+.text-justify{
+  text-align: justify;
 }
 .text-sm{
   font-size: 0.875rem;
@@ -1011,17 +1038,8 @@ select{
 .font-medium{
   font-weight: 500;
 }
-.font-light{
-  font-weight: 300;
-}
-.font-extrabold{
-  font-weight: 800;
-}
 .font-semibold{
   font-weight: 600;
-}
-.leading-5{
-  line-height: 1.25rem;
 }
 .leading-7{
   line-height: 1.75rem;
@@ -1074,6 +1092,11 @@ select{
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .\!outline-none{
@@ -1187,9 +1210,6 @@ select{
   }
   .lg\:col-span-1{
     grid-column: span 1 / span 1;
-  }
-  .lg\:block{
-    display: block;
   }
   .lg\:flex{
     display: flex;
