@@ -7,9 +7,65 @@
     <title>Document</title>
     <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="./css/main.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="eventPWA" />
     <meta name="theme-color" content="#f97316" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link
+      rel="app-touch-startup-image"
+      href="/static/icons/homescreen512.png"
+    />
+    <link
+      rel="app-touch-icon"
+      href="./images/icons/homescreen48.png"
+      sizes="48x48"
+    />
+    <link
+      rel="app-touch-icon"
+      href="./images/icons/homescreen72.png"
+      sizes="72x72"
+    />
+    <link
+      rel="app-touch-icon"
+      href="./images/icons/homescreen96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="app-touch-icon"
+      href="./images/icons/homescreen144.png"
+      sizes="144x144"
+    />
+    <link
+      rel="app-touch-icon"
+      href="./images/icons/homescreen168.png"
+      sizes="168x168"
+    />
+    <link
+      rel="app-touch-icon"
+      href="./images/icons/homescreen192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="app-touch-icon"
+      href="./images/icons/homescreen256.png"
+      sizes="256x256"
+    />
+    <link
+      rel="app-touch-icon"
+      href="./images/icons/homescreen512.png"
+      sizes="512x512"
+    />
   </head>
+  <noscript>You must have JavaScript enabled to use this app. </noscript>
   <body class="bg-slate-50 relative">
+    <div
+      id="banner"
+      class="bg-orange-300 text-orange-700 py-2 px-4 w-full flex justify-center"
+    >
+      نصب اپلیکیشن تحت وب کلیک کنید .
+    </div>
     <!-- App bar -->
     <div
       class="max-w-screen-md mx-auto px-4 mt-10 flex flex-row justify-between items-center md:hidden"
@@ -1252,5 +1308,6 @@
     </footer>
 
     <script src="./js/cdn.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
